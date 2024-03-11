@@ -1,0 +1,244 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="text"],input[type="password"],input[type="email"] {
+    @apply w-full border my-1 py-2 px-3 rounded-2xl;
+}
+
+button{
+    @apply bg-gray-300;
+}
+
+button.primary{
+    background-color: #F5385D;
+    @apply bg-primary p-2 w-full text-white rounded-2xl;
+}
+
+
+.search-class-added {
+    display: block;
+}
+
+.link-container {
+    width: 300px;
+    height: 70px;
+}
+
+.header-links {
+    transition: .4s ease-in-out all;
+}
+.search-added {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: 0;
+} 
+
+.display-none {
+    display: none;
+    height: 0;
+    z-index: -99;
+}
+
+.go-btn{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    padding: 0px 9px 2px 9px;
+    font-size: 13px;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 0, 255, 0.473);
+    font: bold;
+}
+
+
+
+
+
+
+
+
+
+.doc-render {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Adjust the gap between items as needed */
+    margin: 50px auto;
+    max-width: 1200px;
+    padding-left: 100px;
+  }
+
+  .doc-main {
+    width: calc(30% - 8px); 
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 40px;
+    box-shadow: 1px 3px 8px rgba(128, 128, 128, 0.753);
+  }
+
+.doc-div{
+    width: 100%;
+    margin: 40px auto;
+}
+
+.doc-div h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.doc-div img{
+    padding: 10px 50px;
+}
+
+.doc-div-info {
+    width: 100%;
+    height:100px;
+    overflow: hidden;
+    margin: 40px 0;
+    color: rgb(104, 104, 104);
+    text-align: left;
+    /* border: 1px solid #ccc; Optional: Add border for visibility */
+  }
+
+.text-align{
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.ancher {
+    text-align: center;
+    background-color: skyblue;
+    padding: 1rem 3rem;
+    border-radius: 20px;
+}
+
+
+@media  (max-width: 1000px){
+    .doc-main {
+        width: calc(50% - 8px); 
+      }
+      .doc-render{
+        padding-left: 0;
+      }
+} 
+
+
+
+
+@media (max-width: 555px) { 
+    .profile-left{
+        position: relative;
+        top: 80px;
+    }
+    .link-container{
+        position: relative;
+        left: 16%;
+    }
+
+    .doc-render{
+        margin: none;
+        padding: none;
+        display: block;
+    }
+    .doc-div{
+    }
+    .doc-main{
+        margin: 40px auto;
+        width: 90%;
+        margin: 40px 20px;
+  
+    }
+
+    .doc-div img{
+        padding: none;
+    }
+    
+}
+
+
+
+.avail-data{
+        background-color: #333;
+        overflow: auto;
+        white-space: nowrap;
+}
+
+
+.avail-data a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+.avail-data a:hover {
+    background-color: #777;
+}
+
+
+
+.profile {
+    height: 40vh;
+}
+
+
+
+
+
+
+
+
+
+/* header */
+@media (max-width: 5000px) { 
+    
+
+    .fixed-links {
+        position: fixed;
+        top: 4%;
+        right: 2%;
+    }
+    .fixed-search {
+        position: fixed;
+        top: 9%;
+        right: 3%;
+    }
+    
+    .fixed-account {
+        position: absolute  ;
+        top: 5%;
+        right: 45%;
+    }
+    
+    header {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 780px) { 
+    .fixed-links {
+        position: fixed;
+        top: 4%;
+        right: 2%;
+    }
+    .fixed-search {
+        position: fixed;
+        top: 9%;
+        left: 0%;
+    }
+    
+    .fixed-account {
+        position: fixed;
+        top: 0%;
+        right: 45%;
+    }
+    
+    header {
+        margin-bottom: 50px;
+    }
+}

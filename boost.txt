@@ -16,3 +16,4 @@ Dark green boost 1 on 2025-02-26 00:00:00
 Dark green boost 2 on 2025-03-01 00:00:00
 Dark green boost 3 on 2025-02-25 00:00:00
 Dark green boost 1 on 2025-05-01 00:00:00
+Dark green boost 2 on 2025-05-02 00:00:00
